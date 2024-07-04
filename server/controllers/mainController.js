@@ -1,25 +1,19 @@
+exports.homepage = async (req, res) => {
+  console.log("Homepage controller called");
+  const locals = {
+    title: "NodeJS Notes",
+    description: "Free NodeJs Notes App",
+  };
 
-exports.homepage=async(req,res)=>{
+  res.render('index', { locals, layout: '../views/layouts/front-page' });
+};
 
-    const locals={
-        title:"NodeJS Notes",
-        description:"Free NodeJs Notes App"
-    }
+exports.about = async (req, res) => {
+  console.log("About controller called");
+  const locals = {
+    title: "About - NodeJS Notes",
+    description: "Free NodeJs Notes App",
+  };
 
-    // res.render('index',{locals,layout:'../views/layouts/front-page'});
-    res.send("Working");
-    
-}
-
-
-exports.about=async(req,res)=>{
-
-    const locals={
-        title:"About - NodeJS Notes",
-        description:"Free NodeJs Notes App"
-    }
-
-    res.render('about',locals);
-    
-}
-
+  res.render('about', locals);
+};
