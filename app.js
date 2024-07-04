@@ -46,7 +46,7 @@ app.use(express.static("public"));
 
 // Templating engines
 app.use(expressLayouts);
-app.set("layout", "./");
+app.set("views", "./");
 app.set("view engine", "ejs");
 
 
