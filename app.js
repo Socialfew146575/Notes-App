@@ -49,6 +49,10 @@ app.use(expressLayouts);
 app.set("layout", "./layouts/main");
 app.set("view engine", "ejs");
 
+app.get("/",(req,res)=>{
+    return res.send("Working");
+}
+
 // Routes
 
 app.use("/", notes);
