@@ -74,6 +74,9 @@ h6 {
   --bs-pagination-active-border-color: var(--bs-primary-rgb);
 }
 
+.main{
+  background-color:var(--background-color)
+}
 
 @media (min-width:1200px){
 
@@ -87,8 +90,11 @@ h6 {
 
 }
 
+
+
 .home {
 }
+
 
 .home-title::before {
   content: url("../img/stars.svg");

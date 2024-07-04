@@ -46,10 +46,12 @@ app.use(express.static("public"));
 
 // Templating engines
 app.use(expressLayouts);
-app.set("layout", "./layouts/main");
+app.set("layout", "./");
 app.set("view engine", "ejs");
 
 // Routes
+
+
 
 app.use("/", notes);
 app.use("/", dashboard);

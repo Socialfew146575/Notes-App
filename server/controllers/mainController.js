@@ -7,6 +7,7 @@ exports.homepage=async(req,res)=>{
     }
 
     res.render('index',{locals,layout:'../views/layouts/front-page'});
+   
     
 }
 
@@ -18,7 +19,7 @@ exports.about=async(req,res)=>{
         description:"Free NodeJs Notes App"
     }
 
-    res.render('about',locals);
+    res.render("about", { locals, layout: "../views/layouts/main" });
     
 }
 
